@@ -13,9 +13,10 @@ build/
 !default.xcworkspace
 xcuserdata
 profile
+Keys.plist
 *.moved-aside
 DerivedData
 .idea/
+
 # Pods - for those of you who use CocoaPods
 Pods
-*/Keys.plist
