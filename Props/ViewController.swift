@@ -30,11 +30,18 @@ class ViewController: UIViewController, FBLoginViewDelegate {
   }
   
   func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
-    println("User: \(user)")
-    println("User ID: \(user.objectID)")
-    println("User Name: \(user.name)")
+    var newUser = PFObject(className: "PropsUser")
+    newUser["fbId"] = user.objectID;
+    newUser["name"] = user.name;
     var userEmail = user.objectForKey("email") as String
-    println("User Email: \(userEmail)")
+    newUser["email"] = userEmail
+    newUser.saveInBackgroundWithBlock { (result: Bool,error: NSError!) -> Void in
+      if(result) {
+        println("It worked.")
+      } else {
+        println("Damn, it didn't work.")
+      }
+    }
   }
   
   func loginViewShowingLoggedOutUser(loginView : FBLoginView!) {
