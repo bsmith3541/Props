@@ -1,0 +1,20 @@
+PODS:
+  - Quick (0.2.0)
+
+DEPENDENCIES:
+  - Quick (from `https://github.com/Quick/Quick`, tag `v0.2.1`)
+
+EXTERNAL SOURCES:
+  Quick:
+    :git: https://github.com/Quick/Quick
+    :tag: v0.2.1
+
+CHECKOUT OPTIONS:
+  Quick:
+    :git: https://github.com/Quick/Quick
+    :tag: v0.2.1
+
+SPEC CHECKSUMS:
+  Quick: 1b2e5892266a111ec2e13f925f8a4103978f13f8
+
+COCOAPODS: 0.35.0
