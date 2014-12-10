@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Props": {
+            "applicationId": "hXkaPXamITOVbj87xL72AwQb802GsvLSI5YhCHgP", 
+            "masterKey": "DdvSj08WifDjilSQ8zf7iXBbUnm24afSkbrkj59e"
+        }, 
+        "_default": {
+            "link": "Props"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.2"
+    }
+}
