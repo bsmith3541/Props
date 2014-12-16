@@ -1,10 +1,3 @@
-
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
-});
-
 var PropsUser = Parse.Object.extend("PropsUser");
 
 // Check if fbId is set, and enforce uniqueness based on the fbId column.
